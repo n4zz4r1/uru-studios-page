@@ -1,68 +1,141 @@
 <!DOCTYPE html>
-<!-- ;) -->
-<html>
+<html lang="en">
+   <head>
+      <title>Uru Studios</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta name="description" content="Join the adventure with Bouncy Mysteries, an innovative brick breaker game with a twist of RPG, perfect for all ages.">
+      <meta name="author" content="Uru Studios">
+      <link rel="stylesheet" href="css/bulma.min.css" />
+      <link rel="stylesheet" href="css/font-awesome.min.css">
+      <link rel="apple-touch-icon" sizes="180x180" href="fav/apple-touch-icon.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="fav/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="fav/favicon-16x16.png">
+      <link rel="manifest" href="site.webmanifest">
+  <script>
+        function setLanguage(lang) {
+            if (lang === 'pt_BR') {
+                document.getElementById('about-title').innerText = 'Dear Gamers,';
+                document.getElementById('about-text1').innerText = '';
+                document.getElementById('about-text2').innerText = '';
+                document.getElementById('about-text3').innerText = '';
+                document.getElementById('about-text4').innerText = '';
+            } else {
+                document.getElementById('about-title').innerText = 'Dear Gamers,';
+                document.getElementById('about-text1').innerText = 'Our studio is born from a passion for originality and a commitment to creating captivating gaming experiences. As an independent team, we thrive on innovation and the excitement of developing unique games that stand out.';
+                document.getElementById('about-text2').innerText = 'Every game we make is crafted with care, designed not just to entertain, but to inspire. We value your role in this journey and invite you to join us in shaping the future of gaming. Thank you for your support and for being an integral part of our creative adventure.';
+                document.getElementById('about-text3').innerText = 'Game on!';
+                document.getElementById('about-text4').innerText = 'The Uru Studios Team';
+            }
+        }
+      </script>
+   </head>
+   <body>
 
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Uru Studios</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="">
-    <link rel="apple-touch-icon" sizes="180x180" href="/fav/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/fav/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/fav/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <link href="/css/bootstrap.min.css" rel="stylesheet">
-
-</head>
-
-<body class="d-flex h-100 text-center text-white bg-dark">
-
-    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column ">
-
-        <header class="mb-auto">
-            <div>
-                <h3 class="float-md-start mb-0">
-                    <img src="/images/logo.png" alt="" style="height: 60px; ">
-                </h3>
+      <div>
+         <nav class="navbar py-4">
+            <div class="container is-fluid">
+               <div class="navbar-brand">
+                  <a class="navbar-item" href="#">
+                  <img src="./logo.png" alt="Bouncy Mysteries Logo">
+                  </a>
+               </div>
+               <div class="">
+                  <!-- <a href="#" onclick="setLanguage('en')" class="button icon">
+                    EN
+                  </a>
+                  <a href="#" onclick="setLanguage('pt_BR')" class="button icon">
+                    BR
+                  </a> -->
+              </div>
             </div>
-        </header>
-
-        <main class="px-3 p-4 container">
-
-            <div class="row">
-                <div class="col-md-3"></div>
-                <div class="col-md-6">
-                    <h2>[under development]</h2>
-                    <h2>About Us</h2>
-                    <p class="lead">We are a small, new and passionate gaming studio located in São Paulo, Brazil. Our mission is to give the best experience possible in our games, bringing a lot of love and originality.</p>
-                    </div>
-                <div class="col-md-3"></div>
-            </div>
-            <div class="row pt-4">
-                <div class="col-md-3"></div>
-                <div class="col-md-6">
-                    <div class="card  bg-secondary">
-                        <img src="/images/bouncy-bg.jpg" class="card-img-top img-fluid" alt="">
-                        <div class="card-body">
-                            <h5 class="card-title"><b>Bouncy Mysteries</b></h5>
-                            <p class="card-text">Available January / 2024.</p>
-                            <a href="#" class="btn btn-secondary">Android</a>
-                            <a href="#" class="btn btn-secondary">iOS</a>
-                        </div>
-                    </div>
-
+         </nav>
+         <section class="section is-black" style="background-image: url('back.png'); background-size: cover; background-position: center;">
+            <div class="container">
+               <div class="is-vcentered columns is-multiline">
+                  <div class="column is-8 is-8-desktop mb-4">
+                     <h2 id="about-title" class="has-text-white mt-2 mb-3 is-size-1 is-size-3-mobile has-text-weight-bold">Dear Gamers,</h2>
+                     <p id="about-text1" class="has-text-white">
+                        Our studio is born from a passion for originality and a commitment to creating captivating gaming experiences. As an independent team, we thrive on innovation and the excitement of developing unique games that stand out.
+                     </p>
+                     <p id="about-text2" class="has-text-white">
+                        Every game we make is crafted with care, designed not just to entertain, but to inspire. We value your role in this journey and invite you to join us in shaping the future of gaming. Thank you for your support and for being an integral part of our creative adventure.
+                     </p>
+                     <p id="about-text3" class="has-text-white">
+                      Game on!
+                   </p>
+                    <p id="about-text4" class="has-text-white">
+                      The Uru Studios Team
+                  </p>
                 </div>
-                <div class="col-md-3"></div>
+               </div>
             </div>
-
-        </main>
-
-        <footer class="mt-auto text-white-50">
-            <p> copyright © uru studios - all rights reserved </p>
-        </footer>
-    </div>
-</body>
-
+         </section>
+         <section class="section">
+            <div class="container">
+               <div class="mb-6 pb-3 columns is-multiline">
+                  <div class="column is-12 is-6-desktop mx-auto has-text-centered">
+                     <h2 class="mb-4 is-size-1 is-size-3-mobile has-text-weight-bold">Bouncy Mysteries</h2>
+                     <p class="subtitle has-text-grey mb-5">A captivating puzzle game perfect for killing time, featuring animated characters inspired by classic animations and RPG adventures.</p>
+                     <div class="buttons is-centered">
+                        <button class="button disabled is-primary" disabled>
+                        <span class="icon is-small">
+                        <i class="fa fa-google"></i>
+                        </span>
+                        <span>
+                        Google Play (July/2024)
+                        </span>
+                        </button>
+                        <button class="button disabled is-primary" disabled>
+                        <span class="icon is-small">
+                        <i class="fa fa-apple"></i>
+                        </span>
+                        <span>
+                        Apple Sore (July/2024)
+                        </span>
+                        </button>
+                     </div>
+                  </div>
+               </div>
+               <div class="columns is-multiline">
+                  <div class="column is-12 is-6-desktop">
+                     <div class="mb-6 is-flex">
+                        <span><img src="game-icon.svg" width="80" alt=""></span>
+                        <div class="ml-3">
+                           <h4 class="is-size-4 has-text-weight-bold mb-2">Thrilling Adventure</h4>
+                           <p class="subtitle has-text-grey">Join three young heroes as they take on a haunted house filled with mysterious brick monsters!</p>
+                        </div>
+                     </div>
+                     <div class="mb-6 is-flex">
+                        <span><img src="game-icon.svg" width="80" alt=""></span>
+                        <div class="ml-3">
+                           <h4 class="is-size-4 has-text-weight-bold mb-2">Challenging Puzzles</h4>
+                           <p class="subtitle has-text-grey">Test your skills with complex puzzles that blend brick-breaking action with strategic RPG elements.</p>
+                        </div>
+                     </div>
+                     <div class="mb-6 is-flex">
+                        <span><img src="game-icon.svg" width="80" alt=""></span>
+                        <div class="ml-3">
+                           <h4 class="is-size-4 has-text-weight-bold mb-2">Fun for All Ages</h4>
+                           <p class="subtitle has-text-grey">Designed to be enjoyed by puzzle lovers of all ages, perfect for a quick gaming session or an extended playtime.</p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="column is-12 is-6-desktop">
+                     <img class="mx-auto mt-0-widescreen image" src="smartphone-game1.png" alt="Bouncy Mysteries Gameplay">
+                  </div>
+               </div>
+            </div>
+         </section>
+         <footer class="section">
+            <div class="pt-5" style="border-top: 1px solid #dee2e6;"></div>
+            <div class="container">
+               <div class="is-flex-tablet is-justify-content-between is-align-items-center">
+                  <p>All rights reserved &copy; Uru Studios 2024</p>
+                  <div class="py-2 is-hidden-tablet"></div>
+               </div>
+            </div>
+         </footer>
+      </div>
+   </body>
 </html>
