@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>Privacy Policy</title>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit-no">
+   <meta name="description" content="Privacy Policy for Uru Studios' games and services.">
+   <meta name="author" content="Uru Studios">
+   <link rel="stylesheet" href="css/bulma.min.css">
+   <link rel="stylesheet" href="css/font-awesome.min.css">
+   <link rel="apple-touch-icon" sizes="180x180" href="fav/apple-touch-icon.png">
+   <link rel="icon" type="image/png" sizes="32x32" href="fav/favicon-32x32.png">
+   <link rel="icon" type="image/png" sizes="16x16" href="fav/favicon-16x16.png">
+   <link rel="manifest" href="site.webmanifest">
+   <script>
+      function setLanguage(lang) {
+         const texts = {
+            en: {
+               title: "Privacy Policy",
+			   version: "Version 1.0 - 30th of April, 2024",
+               sections: [
+                  {
+                     title: "1. Introduction",
+                     content: "Uru Studios (\"we,\" \"our,\" or \"us\") is committed to protecting your privacy. This Privacy Policy outlines how we collect, use, store, and share information when you use our games and services."
+                  },
+                  {
+                     title: "2. Information We Collect",
+                     content: "We collect information such as your name, email address, and billing information, as well as telemetry data and game statistics. Additionally, we use AppLovin for marketing and analytics purposes."
+                  },
+                  {
+                     title: "3. How We Use Your Information",
+                     content: "We use your information to provide, maintain, and improve our games and services, monitor gameplay, process transactions, and personalize experiences. We also use it for marketing and analytics through AppLovin."
+                  },
+                  {
+                     title: "4. Sharing Information",
+                     content: "We may share your information with third parties only in the following situations: service providers, legal requirements, or business transfers. We also share data with AppLovin for marketing and telemetry purposes."
+                  },
+                  {
+                     title: "5. Data Security",
+                     content: "We implement industry-standard measures to protect your data from unauthorized access, alteration, or loss. However, no transmission over the internet or electronic storage method is entirely secure."
+                  },
+                  {
+                     title: "6. Children's Privacy",
+                     content: "Our games are not intended for children under 13 without parental consent. If we learn that we have collected data from a child under 13 without parental consent, we will take steps to delete that information."
+                  },
+                  {
+                     title: "7. User Rights",
+                     content: "You have the right to access, correct, or delete your data. Contact us at privacy@urustudios.com to exercise these rights."
+                  },
+                  {
+                     title: "8. Changes to This Policy",
+                     content: "We may update this Privacy Policy from time to time. Any changes will be posted on this page, and continued use of our services after the update constitutes acceptance of the new policy."
+                  },
+                  {
+                     title: "9. Governing Law",
+                     content: "This Privacy Policy is governed by and construed in accordance with the laws of Brazil and the United States, depending on the user's location."
+                  }
+               ]
+            },
+            pt_BR: {
+               title: "Política de Privacidade",
+			   version: "Versão 1.0 - 30 de abril de 2024",
+               sections: [
+                  {
+                     title: "1. Introdução",
+                     content: "Uru Studios (\"nós,\" \"nosso,\" ou \"nos\") está comprometido a proteger sua privacidade. Esta Política de Privacidade descreve como coletamos, usamos, armazenamos e compartilhamos informações quando você usa nossos jogos e serviços."
+                  },
+                  {
+                     title: "2. Informações que Coletamos",
+                     content: "Coletamos informações como nome, endereço de e-mail e informações de cobrança, bem como dados de telemetria e estatísticas do jogo. Também utilizamos AppLovin para fins de marketing e análise."
+                  },
+                  {
+                     title: "3. Como Usamos Suas Informações",
+                     content: "Usamos suas informações para fornecer, manter e melhorar nossos jogos e serviços, monitorar o jogo, processar transações e personalizar experiências. Também as utilizamos para marketing e análises através da AppLovin."
+                  },
+                  {
+                     title: "4. Compartilhando Informações",
+                     content: "Podemos compartilhar suas informações com terceiros apenas nas seguintes situações: provedores de serviços, requisitos legais, ou transferências de negócios. Também compartilhamos dados com a AppLovin para fins de marketing e telemetria."
+                  },
+                  {
+                     title: "5. Segurança dos Dados",
+                     content: "Implementamos medidas padrão da indústria para proteger seus dados de acesso não autorizado, alteração ou perda. No entanto, nenhuma transmissão pela internet ou método de armazenamento eletrônico é totalmente seguro."
+                  },
+                  {
+                     title: "6. Privacidade das Crianças",
+                     content: "Nossos jogos não são destinados a crianças menores de 13 anos sem o consentimento dos pais. Se descobrirmos que coletamos dados de uma criança menor de 13 anos sem consentimento, tomaremos medidas para deletar essas informações."
+                  },
+                  {
+                     title: "7. Direitos do Usuário",
+                     content: "Você tem o direito de acessar, corrigir ou deletar seus dados. Entre em contato conosco em privacidade@urustudios.com para exercer esses direitos."
+                  },
+                  {
+                     title: "8. Mudanças a Esta Política",
+                     content: "Podemos atualizar esta Política de Privacidade de tempos em tempos. Quaisquer alterações serão publicadas nesta página, e o uso contínuo de nossos serviços após a atualização constitui aceitação da nova política."
+                  },
+                  {
+                     title: "9. Lei Aplicável",
+                     content: "Esta Política de Privacidade é regida e interpretada de acordo com as leis do Brasil e dos Estados Unidos, dependendo da localização do usuário."
+                  }
+               ]
+            }
+         };
+
+         const selectedTexts = texts[lang];
+
+         // Update page content
+         document.getElementById('pp-title').innerText = selectedTexts.title;
+		 document.getElementById('tos-version').innerText = selectedTexts.version;
+
+         const ppContentDiv = document.getElementById('pp-content');
+         ppContentDiv.innerHTML = '';
+
+         selectedTexts.sections.forEach(section => {
+            const sectionTitle = document.createElement('h2');
+            sectionTitle.innerText = section.title;
+
+            const sectionContent = document.createElement('p');
+            sectionContent.innerText = section.content;
+
+            ppContentDiv.appendChild(sectionTitle);
+            ppContentDiv.appendChild(sectionContent);
+         });
+      }
+   </script>
+</head>
+<body onload="setLanguage('en')">
+   <div>
+
+      <section class="section">
+         <div class="container">
+			<img src="./logo.png" alt="Bouncy Mysteries Logo" style="max-width: 400px;">
+			<br><br><br>
+            <div>
+               <a href="#" onclick="setLanguage('en')" class="button icon">
+                 EN
+               </a>
+               <a href="#" onclick="setLanguage('pt_BR')" class="button icon">
+                 BR
+               </a>
+            </div>
+			<br>
+			<h1 id="pp-title" class="title"></h1>
+			<h3 id="tos-version"></h3><br><br>
+
+            <div id="pp-content" class="content"></div>
+         </div>
+      </section>
+      <footer section="section">
+         <div class="pt-5" style="border-top: 1px solid #dee2e6;"></div>
+         <div class="container">
+            <div class="is-flex-tablet is-justify-content-between is-align-items-center">
+               <p>Todos os direitos reservados &copy; Uru Studios 2024 - <a href="mailto:contact@urustudios.com">contact@urustudios.com</a></p>
+            </div>
+         </div>
+         <div class="container">
+            <div class="is-flex-tablet is-justify-content-between is-align-items-center">
+               <p><a href="terms-of-service.html">Termos de Serviço</a> - <a href="privacy-policy.html">Política de Privacidade</a></p>
+            </div>
+         </div>
+		 <br>
+		 <br>
+      </footer>
+   </div>
+</body>
+</html>

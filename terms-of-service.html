@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>Uru Studios</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit-no">
+      <meta name="description" content="Join the adventure with Bouncy Mysteries, an innovative brick breaker game with a twist of RPG, perfect for all ages.">
+      <meta name="author" content="Uru Studios">
+      <link rel="stylesheet" href="css/bulma.min.css">
+      <link rel="stylesheet" href="css/font-awesome.min.css">
+      <link rel="apple-touch-icon" sizes="180x180" href="fav/apple-touch-icon.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="fav/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="fav/favicon-16x16.png">
+      <link rel="manifest" href="site.webmanifest">
+      <script>
+         function setLanguage(lang) {
+            // Texts for each language
+            const texts = {
+               en: {
+                  title: "Terms of Service",
+                  version: "Version 1.0 - 30th of April, 2024",
+                  sections: [
+                     {
+                        title: "1. Acceptance of Terms",
+                        content: "By downloading, installing, or using any game or service offered by Uru Studios, you agree to abide by these Terms of Service. If you do not agree, please refrain from using our games and services."
+                     },
+                     {
+                        title: "2. Eligibility",
+                        content: "You must be at least 13 years old to use our services. If you are under 18 years old, you may use our services only with the involvement of a parent or guardian."
+                     },
+                     {
+                        title: "3. Virtual Goods and Currency",
+                        content: "Our games may include virtual goods and currency available for purchase. These items have no real-world monetary value and cannot be exchanged outside the game. All sales of virtual goods and currency are final, and no refunds will be provided, except as required by law."
+                     },
+                     {
+                        title: "4. User Conduct",
+                        content: "By using our services, you agree not to:",
+                        points: [
+                           "Engage in cheating, hacking, or other unfair practices.",
+                           "Harass, abuse, or harm other users.",
+                           "Share, sell, or transfer your account or account details to another person."
+                        ]
+                     },
+                     {
+                        title: "6. Intellectual Property",
+                        content: "All content, including but not limited to graphics, gameplay mechanics, and music, are the intellectual property of Uru Studios or its licensors. You agree not to copy, distribute, or modify any part of our games or services without our explicit consent."
+                     },
+                     {
+                        title: "7. Updates and Changes",
+                        content: "We may update or modify our games and services at any time without prior notice. We reserve the right to change these Terms of Service as necessary. Continued use of our services after changes constitutes acceptance of the new terms."
+                     },
+                     {
+                        title: "8. Limitation of Liability",
+                        points: [
+                           "Uru Studios is not liable for any direct, indirect, incidental, or consequential damages arising from your use of our games or services.",
+                           "Our total liability in connection with these Terms of Service is limited to the amount paid by you for our services."
+                        ]
+                     },
+                     {
+                        title: "9. Termination",
+                        content: "We reserve the right to terminate your access to our games or services for violating these Terms of Service or for any reason at our discretion."
+                     },
+                     {
+                        title: "10. Governing Law",
+                        points: [
+                           "These Terms of Service are governed by and construed in accordance with the laws of Brazil and the United States, depending on the user's location.",
+                           "For users residing in Brazil, any legal action or proceeding relating to these Terms of Service shall be brought exclusively in the courts of Brazil.",
+                           "For users residing in the United States, any legal action or proceeding relating to these Terms of Service shall be brought exclusively in the courts of the United States."
+                        ]
+                     }
+                  ]
+               },
+               pt_BR: {
+                  title: "Termos de Serviço",
+                  version: "Versão 1.0 - 30 de abril de 2024",
+                  sections: [
+                     {
+                        title: "1. Aceitação dos Termos",
+                        content: "Ao baixar, instalar ou usar qualquer jogo ou serviço oferecido pela Uru Studios, você concorda em cumprir estes Termos de Serviço. Se não concordar, por favor, não continue."
+                     },
+                     {
+                        title: "2. Elegibilidade",
+                        content: "Você deve ter pelo menos 13 anos para usar nossos serviços. Se você tiver menos de 18 anos, só poderá usar nossos serviços com o envolvimento de um responsável."
+                     },
+                     {
+                        title: "3. Bens Virtuais e Moedas",
+                        content: "Nossos jogos podem incluir bens virtuais e moedas disponíveis para compra. Esses itens não têm valor monetário no mundo real e não podem ser trocados fora do jogo. Todas as vendas de bens virtuais e moedas são finais, e não haverá reembolsos, exceto conforme exigido por lei."
+                     },
+                     {
+                        title: "4. Conduta do Usuário",
+                        content: "Ao usar nossos serviços, você concorda em não:",
+                        points: [
+                           "Se envolver em trapaça, hacking ou outras práticas desleais.",
+                           "Assediar, abusar ou prejudicar outros usuários.",
+                           "Compartilhar, vender ou transferir sua conta ou detalhes de sua conta para outra pessoa."
+                        ]
+                     },
+                     {
+                        title: "6. Propriedade Intelectual",
+                        content: "Todo o conteúdo, incluindo, mas não se limitando a gráficos, mecânicas de jogo e música, é de nossa propriedade ou de nossos licenciadores. Você concorda em não copiar, distribuir ou modificar qualquer parte de nossos jogos ou serviços sem nosso consentimento explícito."
+                     },
+                     {
+                        title: "7. Atualizações e Mudanças",
+                        content: "Podemos atualizar ou modificar nossos jogos e serviços a qualquer momento sem aviso prévio. Reservamo-nos o direito de alterar estes Termos de Serviço conforme necessário. O uso contínuo de nossos serviços após as alterações constitui aceitação dos novos termos."
+                     },
+                     {
+                        title: "8. Limitação de Responsabilidade",
+                        points: [
+                           "A Uru Studios não é responsável por quaisquer danos diretos, indiretos, incidentais ou consequenciais decorrentes do uso de nossos jogos ou serviços.",
+                           "Nossa responsabilidade total em conexão com estes Termos de Serviço é limitada ao valor pago por você por nossos serviços."
+                        ]
+                     },
+                     {
+                        title: "9. Rescisão",
+                        content: "Reservamo-nos o direito de encerrar seu acesso a nossos jogos ou serviços por violar estes Termos de Serviço ou por qualquer motivo a nosso critério."
+                     },
+                     {
+                        title: "10. Lei Aplicável",
+                        points: [
+                           "Estes Termos de Serviço são regidos e interpretados de acordo com as leis do Brasil e dos Estados Unidos, dependendo da localização do usuário.",
+                           "Para usuários residentes no Brasil, qualquer ação ou processo legal relacionado a estes Termos de Serviço será conduzido exclusivamente nos tribunais do Brasil.",
+                           "Para usuários residentes nos Estados Unidos, qualquer ação ou processo legal relacionado a estes Termos de Serviço será conduzido exclusivamente nos tribunais dos Estados Unidos."
+                        ]
+                     }
+                  ]
+               }
+            };
+         
+            const selectedTexts = texts[lang];
+         
+            // Update page content
+            document.getElementById('tos-title').innerText = selectedTexts.title;
+            document.getElementById('tos-version').innerText = selectedTexts.version;
+         
+            const contentDiv = document.getElementById('tos-content');
+            contentDiv.innerHTML = '';
+         
+            selectedTexts.sections.forEach(section => {
+               const sectionTitle = document.createElement('h2');
+               sectionTitle.innerText = section.title;
+         
+               const sectionContent = document.createElement('p');
+         if (section.content) {
+         sectionContent.innerText = section.content;
+         }
+         
+               contentDiv.appendChild(sectionTitle);
+               contentDiv.appendChild(sectionContent);
+         
+               if (section.points) {
+                  const ul = document.createElement('ul');
+                  section.points.forEach(point => {
+                     const li = document.createElement('li');
+                     li.innerText = point;
+                     ul.appendChild(li);
+                  });
+         
+                  contentDiv.appendChild(ul);
+               }
+            });
+         }
+      </script>
+   </head>
+   <body onload="setLanguage('en')">
+      <div>
+         <section class="section">
+            <div class="container">
+               <img src="./logo.png" alt="Bouncy Mysteries Logo" style="max-width: 400px;">
+               <br>
+               <br>
+               <br>
+               <a href="#" onclick="setLanguage('en')" class="button icon">
+               EN
+               </a>
+               <a href="#" onclick="setLanguage('pt_BR')" class="button icon">
+               BR
+               </a>
+               <br>
+               <br>
+               <h1 id="tos-title" class="title"></h1>
+               <h3 id="tos-version"></h3>
+               <br>
+               <div id="tos-content" class="content"></div>
+            </div>
+         </section>
+         <footer class="section">
+            <div class="pt-5" style="border-top: 1px solid #dee2e6;"></div>
+            <div class="container">
+               <div class="is-flex-tablet is-justify-content-between is-align-items-center">
+                  <p>Todos os direitos reservados &copy; Uru Studios 2024 - <a href="mailto:contact@urustudios.com">contact@urustudios.com</a></p>
+               </div>
+            </div>
+            <div class="container">
+               <div class="is-flex-tablet is-justify-content-between is-align-items-center">
+                  <p><a href="terms-of-service.html">Termos de Serviço</a> - <a href="privacy-policy.html">Política de Privacidade</a></p>
+               </div>
+            </div>
+         </footer>
+      </div>
+   </body>
+</html>
